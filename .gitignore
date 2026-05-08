@@ -1,0 +1,38 @@
+# 実行可能ファイル
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# テスト関連ファイル
+*.test
+*.out
+coverage.*
+*.coverprofile
+profile.cov
+
+# 依存関係ディレクトリ（必要に応じてコメントを外す）
+# vendor/
+
+# Goワークスペースファイル
+go.work
+go.work.sum
+
+# 環境変数ファイル
+.env
+.env.local
+.env.*.local
+
+# node_modules
+node_modules/
+
+# Next.js ビルド出力
+.next/
+
+# データベースファイル
+*.db
+
+# エディタ/IDE関連の設定ファイル
+.idea/
+.vscode/
