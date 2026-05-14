@@ -2,6 +2,7 @@ package main
 
 import (
 	"log"
+	"net/http"
 	"os"
 
 	"github.com/example/go-shopping/config"
@@ -27,7 +28,7 @@ func main() {
 		Path:     "/",
 		MaxAge:   86400,
 		HttpOnly: true,
-		SameSite: 4, // SameSiteNoneMode
+		SameSite: http.SameSiteLaxMode,
 	}
 
 	productSvc := services.NewProductService(db)
